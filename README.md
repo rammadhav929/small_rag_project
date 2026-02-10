@@ -2,7 +2,8 @@
 
 # What is Rag?
 RAG (Retrieval-Augmented Generation) is about supplying external knowledge to the model at query time so it can answer using your data instead of relying only on what it learned during training.
-** A RAG system:
+
+** A RAG system: **
 - Searches your documents (PDFs, notes, DB, logs, etc.)
 - Retrieves the most relevant pieces
 - Injects them into the prompt as context
