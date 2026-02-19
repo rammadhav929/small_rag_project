@@ -2,6 +2,8 @@
 # What is LLM?
 Large Language Models (LLMs) are AI systems designed to understand, process and generate human-like text. They are built using advanced neural network architectures that allow them to learn patterns, context and semantics from vast amounts of text data. 
 
+RNN processes sequences sequentially using hidden memory, while transformers process the entire sequence simultaneously using self-attention to capture relationships between all tokens.
+
 # What is Rag?
 RAG (Retrieval-Augmented Generation) is about supplying external knowledge to the model at query time so it can answer using your data instead of relying only on what it learned during training.
 
