@@ -1,5 +1,5 @@
 # small_rag_project
-#What is LLM?
+# What is LLM?
 Large Language Models (LLMs) are AI systems designed to understand, process and generate human-like text. They are built using advanced neural network architectures that allow them to learn patterns, context and semantics from vast amounts of text data. 
 
 # What is Rag?
