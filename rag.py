@@ -1,3 +1,7 @@
+
+# pip install llama-cpp-python sentence-transformers faiss-cpu
+ 
+
 import os
 import faiss
 import numpy as np
