@@ -6,6 +6,9 @@ RNN processes sequences sequentially using hidden memory, while transformers pro
 
 Embeddings assign each word a learned coordinate in a high-dimensional space; the model processes these numbers mathematically and generates text by selecting the vocabulary word whose vector best matches the output vector.
 
+# What is Positional Embedding?
+Positional embedding tells the model the order (position) of words in a sentence.
+
 # What is Rag?
 RAG (Retrieval-Augmented Generation) is about supplying external knowledge to the model at query time so it can answer using your data instead of relying only on what it learned during training.
 
