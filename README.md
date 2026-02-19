@@ -14,6 +14,10 @@ Positional embedding tells the model the order (position) of words in a sentence
 # What is Self Attention?
 Self-attention allows each token to weigh and gather information from all other tokens in a sequence, enabling context-aware understanding of language.
 
+
+Multi-Head Attention means running self-attention multiple times in parallel, each time focusing on different relationships in the sentence.
+
+
 # What is Rag?
 RAG (Retrieval-Augmented Generation) is about supplying external knowledge to the model at query time so it can answer using your data instead of relying only on what it learned during training.
 
