@@ -1,4 +1,5 @@
 # small_rag_project
+Require Libraries are: !pip install huggingface_hub torch sentence-transformers faiss-cpu
 # What is LLM?
 Large Language Models (LLMs) are AI systems designed to understand, process and generate human-like text. They are built using advanced neural network architectures that allow them to learn patterns, context and semantics from vast amounts of text data. 
 
