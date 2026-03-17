@@ -1,19 +1,8 @@
-
-# pip install llama-cpp-python sentence-transformers faiss-cpu
- 
-
 import os
 import faiss
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from llama_cpp import Llama
 
-# 1) Load LLaMA (use a GGUF model)
-llm = Llama(
-    model_path="models/llama-7b.Q4_K_M.gguf",
-    n_ctx=2048,
-    n_threads=8
-)
 
 # 2) Prepare documents
 docs = [
@@ -35,11 +24,11 @@ index.add(embeddings)
 def rag_query(query, k=2):
     # Embed query
     q_emb = embedder.encode([query], convert_to_numpy=True)
-    
+
     # Retrieve top-k docs
     D, I = index.search(q_emb, k)
     context = "\n".join([docs[i] for i in I[0]])
-    
+
     # Compose prompt
     prompt = f"""
 Use the context to answer the question.
@@ -51,8 +40,8 @@ Question: {query}
 Answer:
 """
     # Generate
-    out = llm(prompt, max_tokens=200, stop=["\n\n"])
-    return out["choices"][0]["text"].strip()
+    out = llm(prompt,200)
+    return out
 
 # Example
 print(rag_query("What is RAG and why is it useful?"))
